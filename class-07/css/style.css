@@ -53,6 +53,7 @@ header .navbar ul li a:hover{
 header .navbar ul li ul{
     display: none;
     position: absolute;
+    background-color: rgb(249, 252, 253);
     left: 0;
     width: 160px;
 }
@@ -89,6 +90,29 @@ header label{
     }
     header .navbar{
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        border-top: 1px solid #000;
+
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background-color: #ffff;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+    }
+    #menubar:checked ~ .navbar{
+        display: block;
     }
 }
 
