@@ -42,9 +42,54 @@ header .navbar ul li{
 header .navbar ul li a{
     padding: 15px;
     font-size: 20px;
+    color: #000;
     display: block;
+    transition: 0.5s;
 }
 header .navbar ul li a:hover{
     background-color: blueviolet;
     border-radius: 10px;
 }
+header .navbar ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 160px;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid #000;
+}
+header .navbar ul li ul li ul{
+    left: 160px;
+    top: 0;
+}
+header .navbar ul li:hover>ul,
+header .navbar ul li:focus-within>lu{
+    display: initial;
+}
+
+/* menubar css start */
+#menubar{
+    display: none;
+}
+header label{
+    display: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* media query css start */
+
+@media(max-width: 991px){
+    
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        display: none;
+    }
+}
+
+/* media query css end */
