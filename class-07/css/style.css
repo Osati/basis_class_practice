@@ -8,7 +8,7 @@
 }
 body{
     min-height: 100vh;
-    background-image: url('../images/image.jpg');
+    background-image: url('images/banner.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -35,8 +35,9 @@ header .navbar ul{
 header .navbar ul li{
     display: inline-block;
     position: relative;
-    background-color: rgb(124, 239, 147);
+    background-color: rgb(207, 237, 213);
     border-radius: 10px;
+    margin: 2px;
 
 }
 header .navbar ul li a{
@@ -47,13 +48,12 @@ header .navbar ul li a{
     transition: 0.5s;
 }
 header .navbar ul li a:hover{
-    background-color: blueviolet;
+    background-color: rgb(183, 153, 211);
     border-radius: 10px;
 }
 header .navbar ul li ul{
     display: none;
     position: absolute;
-    background-color: rgb(249, 252, 253);
     left: 0;
     width: 160px;
 }
@@ -94,11 +94,12 @@ header label{
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #fff;
+        background-color: #f86363;
         border-top: 1px solid #000;
 
     }
     header .navbar ul li{
+        margin: 2px;
         width: 100%;
     }
     header .navbar ul li ul{

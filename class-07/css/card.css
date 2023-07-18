@@ -1,0 +1,33 @@
+.card{
+    width: 18rem;
+    height: 400px;
+    background-color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 0px 10px #000;
+}
+.card .card-header, .card-body{
+    height: 150px;
+    border-bottom: 1px solid #000;
+}
+.card .card-footer{
+    height: 100px;
+}
+.btn{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: cornflowerblue;
+    border: 1px solid crimson;
+    color: #000;
+}
+.btn-primary:hover{
+    background-color: azure;
+}
