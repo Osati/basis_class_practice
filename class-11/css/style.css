@@ -33,12 +33,54 @@ header{
     background: hsla(0,0%,95.7%,.68);
 }
 .benefit .card{
-    height: 400px;
+    height: 500px;
     position: relative;
     overflow: hidden;
 }
  .rounded-10{
     border-radius: 10px;
+}
+.benefit .card-body h3,
+.benefit .card-body .btn{
+    margin-top: 25px;
+    margin-left: 35px;
+}
+.benefit .card-body ul li {
+    font-family: unset;
+    font-weight: 600;
+    position: relative;
+    padding: .25rem 1.5rem;
+    list-style: none;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+.benefit .becomeApply{
+    margin-top: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.benefit .becomeApply h1{
+    font-size: 4rem;
+}
+.benefit .becomeApply .become span{
+    color: aqua;
+}
+.benefit .becomeApply .btn-apply{
+    height: 40px;
+    width: 150px;
+    margin-top: 10%;
+    padding: 5px;
+    text-align: center;
+    border-radius: 25px;
+    color: white;
+    margin-right: 4rem;
+    background: rgb(245, 113, 113);
+}
+.benefit .becomeApply a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 /* animate & shape css srart */
@@ -110,26 +152,18 @@ header{
 } 
 
 /* animate & shape end */
-
- /* .benefit .card-body ul li {
-    font-family: unset;
-    font-weight: 600;
+.services .service-head{
     position: relative;
-    padding: .25rem 1.5rem;
+    display:;
+}
+.services .service-tap .title{
+    font-weight: 600;
+}
+.services .service-tap .nav{
     list-style: none;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-  } */
+    border: #000;
 
-
-.becomeApply .become{
-    text-transform: uppercase;
 }
-.becomeApply .become span{
-    color: aqua;
-}
-
-
 
 @media(max-width:576px){
     .icon-link{
@@ -137,4 +171,8 @@ header{
         align-items: center;
         justify-content: space-between;
     }
+    .benefit .card-body{
+        display: block;
+    }
+
 }
