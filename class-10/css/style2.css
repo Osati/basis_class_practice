@@ -1,0 +1,152 @@
+.h-50{ height: 50px !important;} 
+.h-100{ height: 100px !important;}
+.h-150{ height: 150px !important;}
+.h-200{ height: 200px !important;}
+.h-250{ height: 250px !important;}
+.h-300{ height: 300px !important;}
+.h-350{ height: 350px !important;}
+.h-400{ height: 400px !important;}
+.h-450{ height: 450px !important;}
+.h-500{ height: 500px !important;}
+.h-600{ height: 600px !important;}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none !important;
+}
+body{
+    min-height: 100vh;
+    background-image: url('images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .navbar{
+    padding: 0px;
+}
+header .logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+header .navbar ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+header .navbar ul li{
+    display: inline-block;
+    position: relative;
+    background-color: rgb(207, 237, 213);
+    border-radius: 10px;
+    margin: 2px;
+
+}
+header .navbar ul li a{
+    padding: 15px;
+    font-size: 20px;
+    color: #000;
+    display: block;
+    transition: 0.5s;
+}
+header .navbar ul li a:hover{
+    background-color: rgb(183, 153, 211);
+    border-radius: 10px;
+}
+header .navbar ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 160px;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid #000;
+}
+header .navbar ul li ul li ul{
+    left: 160px;
+    top: 0;
+}
+header .navbar ul li:hover>ul,
+header .navbar ul li:focus-within>lu{
+    display: initial;
+}
+
+/* menubar css start */
+#menubar{
+    display: none;
+}
+header label{
+    display: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* media query css start */
+
+@media(max-width: 991px){
+    
+    header label{
+        display: initial;
+    }
+    header .navbar{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f86363;
+        border-top: 1px solid #000;
+
+    }
+    header .navbar ul li{
+        margin: 2px;
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li{
+        background-color: #ffff;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+    }
+    #menubar:checked ~ .navbar{
+        display: block;
+    }
+}
+
+/* media query css end */
+
+
+/* cursor section css start */
+
+.slide img{
+    height: 400px;
+}
+.carousel{
+    top: 105px !important;
+    left: -12px !important;
+    right: 0px !important;
+}
+
+/* cursor section css end */
