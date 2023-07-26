@@ -33,7 +33,6 @@ header{
     background: hsla(0,0%,95.7%,.68);
 }
 .benefit .card{
-    height: 500px;
     position: relative;
     overflow: hidden;
 }
@@ -61,7 +60,7 @@ header{
     text-transform: uppercase;
 }
 .benefit .becomeApply h1{
-    font-size: 4rem;
+    font-size: 3rem;
 }
 .benefit .becomeApply .become span{
     color: aqua;
@@ -86,11 +85,12 @@ header{
 /* animate & shape css srart */
 
 .benefit .card .shape{
-    width: 400px;
-    height: 400px;
-    right: -150px;
+    width: 40%;
+    margin-top: 49px;
+    height: 81%;
+    right: -191px;
     border-radius: 80px;
-    transform: rotate(25deg);
+    transform: rotate(45deg);
     background: #007f3d;
     opacity: .15;
     position: absolute;
@@ -152,19 +152,47 @@ header{
 } 
 
 /* animate & shape end */
+
 .services .service-head{
+    padding: 2rem;
     position: relative;
-    display:;
+    height: 500px;
+    background: rgb(239, 233, 233);
+
 }
 .services .service-tap .title{
+    margin-left: 43%;
+    top: 15px;
+    margin-bottom: 4px;
     font-weight: 600;
+    position: absolute;
+    
 }
 .services .service-tap .nav{
     list-style: none;
-    border: #000;
-
+    left: 46%;
+    margin:5% 0%;
+    position: absolute;
 }
 
+.services ul li.nav-item {
+    padding: 5px;
+    border: 1px solid #04080a;
+}
+.link-1{
+    background: #75d5f1;
+}
+
+.services .service-tap .shape{
+    width: 15%;
+    height: 30%;
+    margin-top:-120px;
+    right: 4rem;
+    transform: rotate(45deg);
+    background: #007f3d;
+    opacity: .15;
+    position: absolute;
+}
 @media(max-width:576px){
     .icon-link{
         display:flex;
