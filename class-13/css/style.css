@@ -21,3 +21,7 @@
 .c-m-b .card{
     margin-bottom: 20px;
 }
+.card button:hover{
+    color: rgb(231, 141, 7);
+    background-color: aqua;
+}
